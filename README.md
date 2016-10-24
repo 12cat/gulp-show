@@ -122,6 +122,7 @@ return rp;
 
 
 > 开发模式
+
 1. 文件迁移
 2. 文件合并
 3. 文件压缩
@@ -131,27 +132,18 @@ return rp;
 7. 页面自动刷新
 
 > 最终模式
+
 1. 文件添加版本号
 2. 小于20*1024 bytes的png图片 base64格式
 
-
-
 > 开发流程
 
-```flow
-s=>start: img/font/css/js/html
-e=>end: webserver/watch
-
-s->c1
-```
+1. img/font/css/js/html
+2. webserver/watch
 
 > 最终流程
 
-```flow
-s=>start: img/font
-e=>end: html
-p1=>operation: css
-p2=>operation: base64/js
-
-s->p1->p2->e
-```
+1. start: img/font
+2. css
+3. base64/js
+4. html
