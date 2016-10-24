@@ -28,7 +28,7 @@ AMD，简单易用，利用node.js（执行流程是异步的）
 	gulp-rev-collector	更新版本号文件引用
 
 版本号
-	/css/styl.css => /css/styl-1d87bebe.css
+	`/css/styl.css => /css/styl-1d87bebe.css`
 	/js/script.js => /js/script-61e0be79.js
 	/img/img1.gif => /img/img1-35c3af8134.gif
 
