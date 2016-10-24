@@ -21,7 +21,7 @@ var gulp = require('gulp'),
 
 // 复制 html
 gulp.task('html', ['clean:html', 'base64', 'js'], function() {
-    return gulp.src(['src/rev/**/*.json', 'view/**/*.html'])
+    return gulp.src(['src/rev/**/*.json', 'view/**/*.html', '!view/common/*'])
                 .pipe(revCollector())
                 .pipe(includer({
                         includerReg: /<!\-\-include\s+"([^'']+)"\-\->/g,

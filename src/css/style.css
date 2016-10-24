@@ -1,3 +1,7 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 h1 {
 	color: red;
 	cursor: pointer;
@@ -11,9 +15,24 @@ span {
 	padding: 154px 166px;
 	background: url('../img/coding.png') no-repeat 0 0;
 }
-.icont {
+.top {
+	height: 50px;
+	background-color: #0099FF;
+	color: #fff;
+}
+.top span {
+	line-height: 50px;
+}
+.logo {
 	display: inline-block;
 	width: 35px;
 	height: 35px;
+	margin: 8px;
 	background: url('../img/firefox.png') no-repeat 0 0;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
 }

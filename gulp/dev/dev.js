@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 
 // 复制 html
 gulp.task('html:dev', ['clean:html'], function() {
-    return gulp.src('view/**/*.html')
+    return gulp.src('view/**/*.html', '!view/common')
                 .pipe(includer({
                         includerReg: /<!\-\-include\s+"([^'']+)"\-\->/g,
                         deepConcat: true    // 递归
