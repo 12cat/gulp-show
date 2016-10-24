@@ -1,4 +1,5 @@
 > 常用工具
+
 * gulp
 * gulp-minify-css		css 压缩
 * gulp-uglify			js 压缩
@@ -21,6 +22,7 @@
 	/js/script.js => /js/script.js?v=61e0be79
 	/img/img1.gif => /img/img1.gif?v=35c3af8134
 ```
+
 1. 打开node_modules\gulp-rev\index.js
 	* 第144行
 	```
@@ -63,6 +65,7 @@
 	```
 
 > 开发目录结构
+
 * src
 	* css
 		* style.css
@@ -92,7 +95,8 @@
 		* index.html
 		* detail.html
 
-> 打包后目录结构
+> 打包后目录结构：
+
 * dist
 	* css
 		* style.min.css
@@ -117,6 +121,7 @@
 			* detail.html
 
 > 开发模式
+
 1. 文件迁移
 2. 文件合并
 3. 文件压缩
@@ -126,14 +131,17 @@
 7. 页面自动刷新
 
 > 最终模式
+
 1. 文件添加版本号
 2. 小于20*1024 bytes的png图片 base64格式
 
 > 开发流程
+
 1. img/font/css/js/html
 2. webserver/watch
 
 > 最终流程
+
 1. start: img/font
 2. css
 3. base64/js
