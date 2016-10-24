@@ -121,7 +121,7 @@ return rp;
 
 
 
-> 开发模式：
+> 开发模式
 1. 文件迁移
 2. 文件合并
 3. 文件压缩
@@ -130,13 +130,14 @@ return rp;
 6. 监测代码文件
 7. 页面自动刷新
 
-> 最终模式：
+> 最终模式
 1. 文件添加版本号
 2. 小于20*1024 bytes的png图片 base64格式
 
 
 
-> 开发流程：
+> 开发流程
+
 ```flow
 s=>start: img/font/css/js/html
 e=>end: webserver/watch
@@ -144,8 +145,9 @@ e=>end: webserver/watch
 s->c1
 ```
 
-> 最终流程：
-```
+> 最终流程
+
+```flow
 s=>start: img/font
 e=>end: html
 p1=>operation: css
