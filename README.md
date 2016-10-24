@@ -12,13 +12,16 @@
 * gulp-content-includer	html 模版替换
 
 版本号
-* /css/styl.css => /css/styl-1d87bebe.css
-* /js/script.js => /js/script-61e0be79.js
-* /img/img1.gif => /img/img1-35c3af8134.gif
 
-* /css/styl.css => /css/styl.css?v=1d87bebe
-* /js/script.js => /js/script.js?v=61e0be79
-* /img/img1.gif => /img/img1.gif?v=35c3af8134
+```
+	/css/styl.css => /css/styl-1d87bebe.css
+	/js/script.js => /js/script-61e0be79.js
+	/img/img1.gif => /img/img1-35c3af8134.gif
+
+	/css/styl.css => /css/styl.css?v=1d87bebe
+	/js/script.js => /js/script.js?v=61e0be79
+	/img/img1.gif => /img/img1.gif?v=35c3af8134
+```
 
 第一步：打开node_modules\gulp-rev\index.js
 第144行
