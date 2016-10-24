@@ -73,59 +73,59 @@ AMD，简单易用，利用node.js（执行流程是异步的）
 
 目录结构
 
-src
-	css
-		style.css
-	font
-		font-awesome-4.6.3（字体图标库）
-	img
-		coding.png
-		dog.jpg
-	js
-		common
-			plugins
-				echarts.min.js
-				jquery-1.8.3.js
-			tools
-				tool.js
-		page
-			login
-				login.js
-			main
-				index.js
-				detail.js
-	*rev（存放版本号目录）
-view
-	login
-		login.html
-	main
-		index.html
-		detail.html
+* src
+	- css
+		+ style.css
+	- font
+		+ font-awesome-4.6.3（字体图标库）
+	- img
+		+ coding.png
+		+ dog.jpg
+	- js
+		+ common
+			* plugins
+				* echarts.min.js
+				* jquery-1.8.3.js
+			* tools
+				* tool.js
+		+ page
+			* login
+				* login.js
+			* main
+				* index.js
+				* detail.js
+	- rev（存放版本号目录）
+* view
+	* login
+		* login.html
+	* main
+		* index.html
+		* detail.html
 
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-dist
-	css
-		style.min.css
-	font
-		font-awesome-4.6.3（字体图标库）
-	img
-		coding.png
-		dog.jpg
-		firefox.png
-	js
-		login
-			login.js
-		main
-			index.js
-			detail.js
-		common.min.js
-	view
-		login
-			login.html
-		main
-			index.html
-			detail.html
+* dist
+	* css
+		* style.min.css
+	* font
+		* font-awesome-4.6.3（字体图标库）
+	* img
+		* coding.png
+		* dog.jpg
+		* firefox.png
+	* js
+		* login
+			* login.js
+		* main
+			* index.js
+			* detail.js
+		* common.min.js
+	* view
+		* login
+			* login.html
+		* main
+			* index.html
+			* detail.html
 
 
 
