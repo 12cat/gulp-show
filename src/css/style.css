@@ -1,0 +1,19 @@
+h1 {
+	color: red;
+	cursor: pointer;
+}
+span {
+	line-height: 35px;
+}
+.background {
+	width: 192px;
+	height: 168px;
+	padding: 154px 166px;
+	background: url('../img/coding.png') no-repeat 0 0;
+}
+.icont {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background: url('../img/firefox.png') no-repeat 0 0;
+}
