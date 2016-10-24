@@ -1,24 +1,24 @@
 工具：
-	* gulp
-	* gulp-minify-css		css 压缩
-	* gulp-uglify			js 压缩
-	* gulp-jshint，jshint	js 代码检测
-	* gulp-concat			文件合并
-	* gulp-rename			文件重命名
-	* gulp--clean			文件清除
-	* gulp-connect			webserver
-	* gulp-rev				给文件添加版本号
-	* gulp-rev-collector	更新版本号文件引用
-	* gulp-content-includer	html 模版替换
+* gulp
+* gulp-minify-css		css 压缩
+* gulp-uglify			js 压缩
+* gulp-jshint，jshint	js 代码检测
+* gulp-concat			文件合并
+* gulp-rename			文件重命名
+* gulp--clean			文件清除
+* gulp-connect			webserver
+* gulp-rev				给文件添加版本号
+* gulp-rev-collector	更新版本号文件引用
+* gulp-content-includer	html 模版替换
 
 版本号
-	* /css/styl.css => /css/styl-1d87bebe.css
-	* /js/script.js => /js/script-61e0be79.js
-	* /img/img1.gif => /img/img1-35c3af8134.gif
+* /css/styl.css => /css/styl-1d87bebe.css
+* /js/script.js => /js/script-61e0be79.js
+* /img/img1.gif => /img/img1-35c3af8134.gif
 
-	* /css/styl.css => /css/styl.css?v=1d87bebe
-	* /js/script.js => /js/script.js?v=61e0be79
-	* /img/img1.gif => /img/img1.gif?v=35c3af8134
+* /css/styl.css => /css/styl.css?v=1d87bebe
+* /js/script.js => /js/script.js?v=61e0be79
+* /img/img1.gif => /img/img1.gif?v=35c3af8134
 
 第一步：打开node_modules\gulp-rev\index.js
 第144行
@@ -122,26 +122,26 @@ return rp;
 
 
 开发模式：
-	1。 文件迁移
-	2。 文件合并
-	3。 文件压缩
-	4。 文件重命名
-	5。 启动服务功能
-	6。 监测代码文件
-	7。 页面自动刷新
+1。 文件迁移
+2。 文件合并
+3。 文件压缩
+4。 文件重命名
+5。 启动服务功能
+6。 监测代码文件
+7。 页面自动刷新
 
 最终模式：
-	1。 文件添加版本号
-	2。 小于20*1024 bytes的png图片 base64格式
+1。 文件添加版本号
+2。 小于20*1024 bytes的png图片 base64格式
 
 
 
 开发流程：
-	* img / font / css(min) / js(concat, min) / html
-	* webserver / watch
+* img / font / css(min) / js(concat, min) / html
+* webserver / watch
 
 最终流程：
-	* img(rev) / font(rev)
-	* css(min)
-	* base64(revCollector, rev) / js(concat, min, rev)
-	* html(revCollector)
+* img(rev) / font(rev)
+* css(min)
+* base64(revCollector, rev) / js(concat, min, rev)
+* html(revCollector)
