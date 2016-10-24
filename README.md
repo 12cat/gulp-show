@@ -137,11 +137,19 @@ return rp;
 
 
 开发流程：
-* img / font / css(min) / js(concat, min) / html
-* webserver / watch
+```flow
+s=>start: img/font/css/js/html
+e=>end: webserver/watch
+
+s->c1
+```
 
 最终流程：
-* img(rev) / font(rev)
-* css(min)
-* base64(revCollector, rev) / js(concat, min, rev)
-* html(revCollector)
+```
+s=>start: img/font
+e=>end: html
+p1=>operation: css
+p2=>operation: base64/js
+
+s->p1->p2->e
+```
