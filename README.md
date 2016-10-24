@@ -13,6 +13,7 @@
 * gulp-content-includer	html 模版替换
 
 > 添加版本号
+
 ```
 	/css/styl.css => /css/styl-1d87bebe.css
 	/js/script.js => /js/script-61e0be79.js
