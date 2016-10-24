@@ -1,90 +1,40 @@
-1、CommonJS 常用于服务端，同步的。
-就是为JS的表现来制定规范，因为js没有模块的功能，它希望js可以在任何地方运行，不只是浏览器中，如node.js。
-CommonJS定义的模块分为:
-	模块引用：require
-	模块定义：exports
-	模块标识：module
+AMD，简单易用，利用node.js（执行流程是异步的）
 
-2、AMD 常用于浏览器端，异步的。
-它主要为前端JS的表现制定规范，推崇【依赖前置】，在定义模块的时候就要声明其依赖的模块。
-AMD也支持CMD写法，但依赖前置是官方文档的默认模块定义写法。
+接口：
+	require		引入组件
+	src			读文件，返回一个文件流
+	dest		写文件
+	task		定义一个任务
+	start		执行任务
+	pipe		输送管，用来传递
+	watch		监听文件
 
-3、CMD 常用于浏览器端，异步的。
-sea.js就是遵循他的规范，推崇【就近依赖】，只有在用到某个模块的时候再去require。
+安装
+	1. 安装node.js
+	2. npm install gulp -g
+	   npm install gulp --save-dev
 
+工具：
+	gulp
+	gulp-minify-css		css 压缩
+	gulp-uglify			js 压缩
+	gulp-jshint			js 代码检测
+	jshint
+	gulp-concat			文件合并
+	gulp-rename			文件重命名
+	gulp--clean			文件清除
+	gulp-connect		webserver
+	gulp-rev			给文件添加版本号
+	gulp-rev-collector	更新版本号文件引用
 
-yeoman
-	1. 脚手架（generator [yo]）
+版本号
+	/css/styl.css => /css/styl-1d87bebe.css
+	/js/script.js => /js/script-61e0be79.js
+	/img/img1.gif => /img/img1-35c3af8134.gif
 
-	2. 构建工具（grunt）
-
-	3. 包管理器（bower）
-
-webpack
-	一般配合 grunt 或 gulp 使用
-	配置较为繁琐
-
-	特点：
-		1. webpack 是以 commonJS 的形式来书写脚本滴，但对 AMD/CMD 的支持也很全面，方便旧项目进行代码迁移。
-
-		2. 能被模块化的不仅仅是 JS 了。
-
-		3. 开发便捷，能替代部分 grunt/gulp 的工作，比如打包、压缩混淆、图片转base64等。
-
-		4. 扩展性强，插件机制完善，特别是支持 React 热插拔。 
-
-grunt
-	CMD，配置较为繁琐（执行流程是同步的）
-
-	接口：
-		config		获取配置数据
-		event		监听器
-		fail		错误相关
-		file		读写文件
-		log			控制台输出
-		option		参数
-		task		任务
-		template	模版
-		util		工具函数/库
-
-gulp
-	AMD，简单易用，利用node.js（执行流程是异步的）
-
-	接口：
-		require		引入组件
-		src			读文件，返回一个文件流
-		dest		写文件
-		task		定义一个任务
-		start		执行任务
-		pipe		输送管，用来传递
-		watch		监听文件
-
-	安装
-		1. 安装node.js
-		2. npm install gulp -g
-		   npm install gulp --save-dev
-
-	工具：
-		gulp
-		gulp-minify-css		css 压缩
-		gulp-uglify			js 压缩
-		gulp-jshint			js 代码检测
-		jshint
-		gulp-concat			文件合并
-		gulp-rename			文件重命名
-		gulp--clean			文件清除
-		gulp-connect		webserver
-		gulp-rev			给文件添加版本号
-		gulp-rev-collector	更新版本号文件引用
-
-	版本号
-		/css/styl.css => /css/styl-1d87bebe.css
-		/js/script.js => /js/script-61e0be79.js
-		/img/img1.gif => /img/img1-35c3af8134.gif
-
-		/css/styl.css => /css/styl.css?v=1d87bebe
-		/js/script.js => /js/script.js?v=61e0be79
-		/img/img1.gif => /img/img1.gif?v=35c3af8134
+	/css/styl.css => /css/styl.css?v=1d87bebe
+	/js/script.js => /js/script.js?v=61e0be79
+	/img/img1.gif => /img/img1.gif?v=35c3af8134
 
 第一步：打开node_modules\gulp-rev\index.js
 第144行
