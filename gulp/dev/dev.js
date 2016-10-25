@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 
 // 复制 html
 gulp.task('html:dev', ['clean:html'], function() {
-    return gulp.src('view/**/*.html', '!view/common')
+    return gulp.src(['view/**/*.html', '!view/common/*'])
                 .pipe(includer({
                         includerReg: /<!\-\-include\s+"([^'']+)"\-\->/g,
                         deepConcat: true    // 递归
@@ -65,12 +65,12 @@ gulp.task('js:dev', ['clean:js'], function() {
 // 启动web server
 gulp.task('webserver', function() {
     connect.server({
-        port: 80,
+        root: 'dist',
+        port: 3000,
         host: 'dull',
         livereload: true
     });
 });
-
 
 // gulp 执行的默认命令（压缩要在检查js文件之后执行）
 gulp.task('default', ['js:dev', 'css:dev', 'html:dev', 'img:dev', 'font:dev'], function() {
